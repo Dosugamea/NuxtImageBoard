@@ -1,27 +1,42 @@
 # NuxtImageBoard
-Booru style imageboard written with Nuxt.js (Not yet released)
+Nuxt.jsを用いた画像投稿サイト(データベース)
 
-## Screenshots
-![Top](https://i.imgur.com/ivbfKxb.png)
-![Search](https://i.imgur.com/hWRwMs1.png)
-![Art](https://i.imgur.com/ctS2eMq.png)
+## 注意
+- 他のプロジェクトから一部機能を削除して切り抜いたものです
+- セキュリティ面やバグ等不完全な点が多いため現段階での利用はおすすめしません
 
-## Features
-- Users can search image by keyword/tag/artist/image/list.
-- Super fast(maybe)
-- Invite only flow.
-- Login authorization with ID/PW or LINE account.
-- New art notifcation with using Line notify.
-- New art notification with using OneSignal.
+## スクリーンショット(PC)
+![Top](https://i.imgur.com/rANh95I.png)
+![Search](https://i.imgur.com/ieJZeJP.png)
+![Art](https://i.imgur.com/tP4kUlB.png)
 
-## How it works?
-- Backend: Flask
-- Frontend: Nuxt.js SSR
-- CSS framework: Bulma
-- Database: MariaDB
-- Worker: redis
-- Server: Apache2
-- Hardware: Raspberry Pi 3B
+## スクリーンショット(スマホ)
+![Menu](https://i.imgur.com/jk2rHtg.png)
+![Search](https://i.imgur.com/IISEuv1.png)
+![Art](https://i.imgur.com/u9K6Agi.png)
 
-## When it will get release?
-- Maybe in a year (after I finish realize all my ideas)
+## デモ
+- [こちらからどうぞ](https://nboard.domao.site)
+- ID: demouser
+- PW: demouser
+- (開発中のため不安定です)
+
+## 特徴
+- タグベースの豊富な検索手段
+- デスクトップ/スマホ 両対応UI
+- 他言語対応
+- PWA対応
+- ミュート/マイリスト/ランキング
+- 招待専用フロー
+- LINE Notify / OneSignal を用いた通知機能
+- LINE / Telegram 等のOauthログイン
+
+## 開発環境
+- バックエンド: Flask (Python)
+- フロントエンド: Nuxt.js SSR(Javascript) / Bulma
+
+## 検証済み動作環境
+- Webサーバー: Apache2
+- データベース: MariaDB / Redis
+- ハードウェア: Raspberry Pi 3B
+- Docker-compose
